@@ -3,9 +3,8 @@ pandas
 numpy
 matplotlib
 seaborn
-scikit-learn
-xgboost
-joblib
-plotly
-imblearn
 scikit-learn==1.5.0
+xgboost
+joblib==1.5.3
+plotly
+imbalanced-learn
