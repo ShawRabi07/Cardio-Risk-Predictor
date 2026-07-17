@@ -1,188 +1,250 @@
 <div align="center">
 
-# 🫀 Cardio Risk Predictor
+# ❤️ AI-Based Heart Disease Risk Prediction
 
-### AI-Powered Cardiovascular Disease Risk Assessment
+### Machine Learning-Powered Heart Disease Risk Assessment
 
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://cardiovas.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML%20Framework-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML%20Framework-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Rabi%20Shaw-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rabi-shaw-6a4223297/)
 
 <br/>
 
-> A clinical-grade machine learning application that assesses cardiovascular disease risk in real time using 14 patient features, powered by a high-accuracy Gradient Boosting Classifier.
+> An AI-powered machine learning application that predicts heart disease risk in real time using 14 clinical and lifestyle features, powered by a high-performance Gradient Boosting Classifier.
 
 <br/>
 
-![banner](https://img.shields.io/badge/Accuracy-High%20Performance%20Model-success?style=flat-square) ![status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=flat-square) ![license](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+![banner](https://img.shields.io/badge/Accuracy-High%20Performance%20Model-success?style=flat-square)
+![status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=flat-square)
+![license](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
 </div>
 
 ---
 
-## 📌 Overview
+# 📌 Overview
 
-**Cardio Risk Predictor** is a professional health analytics application that estimates a patient's probability of cardiovascular disease (CVD). It processes clinical inputs — including vitals, lifestyle factors, and automatically engineered medical metrics — and returns a real-time risk classification: **Low Risk** or **High Risk**.
+**AI-Based Heart Disease Risk Prediction** is a machine learning-powered Streamlit web application that predicts the likelihood of heart disease using a trained **Gradient Boosting Classifier**. The application accepts patient demographics, vital signs, laboratory results, and lifestyle information, automatically computes **BMI** and **Pulse Pressure**, and generates a real-time probability score with a corresponding **Low Risk** or **High Risk** classification.
 
-The underlying model is a tuned **Gradient Boosting Classifier** trained on a large clinical dataset, achieving high predictive accuracy across the full feature set.
+Designed with an intuitive user interface, the application enables fast and reliable heart disease risk assessment, making it suitable for educational, research, and machine learning demonstration purposes.
 
 ---
 
-## ✨ Key Features
+# ✨ Key Features
 
 | Feature | Description |
-|---|---|
-| ⚡ **Real-Time Scoring** | Instant CVD probability estimation on every input change |
-| 🧮 **Feature Engineering** | Auto-derives **BMI** and **Pulse Pressure** from raw inputs |
-| 🎯 **Binary Classification** | Clear Low / High Risk output with probability confidence |
-| 📊 **Interactive Dashboard** | Clean Streamlit UI for seamless clinical data entry |
-| 🔍 **Explainable Inputs** | Transparent handling of BP, cholesterol, glucose, and lifestyle flags |
-| 💾 **Persistent Model** | Pre-trained `.joblib` model loads instantly — no re-training needed |
+|---------|-------------|
+| ⚡ **Real-Time Prediction** | Instantly predicts heart disease risk with confidence probability |
+| 🧮 **Automatic Feature Engineering** | Computes BMI and Pulse Pressure automatically |
+| 🤖 **Machine Learning Model** | Uses a trained Gradient Boosting Classifier |
+| 📊 **Interactive Dashboard** | Clean and responsive Streamlit interface |
+| 🎯 **Binary Classification** | Predicts Low Risk or High Risk |
+| 🔍 **Clinical Inputs** | Uses demographics, vitals, lab values, and lifestyle factors |
+| 💾 **Pre-trained Model** | Loads a saved `.joblib` model without retraining |
 
 ---
 
-## 🖥️ Live Demo
+# 🖥️ Live Demo
 
-> 🔗 **[Launch the App →]([https://your-live-link.streamlit.app](https://cardiovas.streamlit.app/))**
+### 🔗 https://cardiovas.streamlit.app/
 
-Enter patient details (age, blood pressure, cholesterol, BMI, etc.) and receive an instant risk assessment with confidence probability.
-
----
-
-## 🛠️ Tech Stack
-
-```
-├── Language          Python 3.x
-├── ML Framework      Scikit-Learn — Gradient Boosting Classifier
-├── Data Processing   Pandas · NumPy
-├── Web Framework     Streamlit
-├── Model Persistence Joblib
-└── Notebook          Jupyter (EDA + Training Pipeline)
-```
+Try the application by entering patient details and receive an instant heart disease risk prediction with probability.
 
 ---
 
-## 📁 Project Structure
+# 🛠️ Tech Stack
 
 ```
-cardio-risk-predictor/
+Language           : Python 3.x
+Machine Learning   : Scikit-Learn
+Model              : Gradient Boosting Classifier
+Web Framework      : Streamlit
+Data Processing    : Pandas, NumPy
+Model Persistence  : Joblib
+Development        : Jupyter Notebook
+```
+
+---
+
+# 📁 Project Structure
+
+```
+AI-Based-Heart-Disease-Risk-Prediction/
 │
-├── app.py                          # Streamlit frontend & prediction logic
-├── model.ipynb                     # EDA, feature engineering & model training
-├── best_cardio_model_final.joblib  # Pre-trained production model
-├── requirements.txt                # Python dependencies
-├── cardio_train.csv                # Raw training dataset
-└── README.md                       # Project documentation
+├── app.py
+├── model.ipynb
+├── best_cardio_model_final.joblib
+├── cardio_train.csv
+├── requirements.txt
+├── README.md
+└── assets/
 ```
 
 ---
 
-## ⚙️ Installation & Setup
+# ⚙️ Installation
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/cardio-risk-predictor.git
-cd cardio-risk-predictor
+git clone https://github.com/your-username/AI-Based-Heart-Disease-Risk-Prediction.git
+
+cd AI-Based-Heart-Disease-Risk-Prediction
 ```
 
-### 2. Create a Virtual Environment (Recommended)
+---
+
+## 2. Create Virtual Environment (Optional)
+
+### Windows
 
 ```bash
 python -m venv venv
-source venv/bin/activate        # macOS/Linux
-venv\Scripts\activate           # Windows
+
+venv\Scripts\activate
 ```
 
-### 3. Install Dependencies
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
+
+---
+
+## 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Application
+---
+
+## 4. Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
-The app will open automatically at `http://localhost:8501`.
+The application will launch at
+
+```
+http://localhost:8501
+```
 
 ---
 
-## 🧠 Model Architecture
+# 🧠 Model Architecture
 
-### Input Features (14 Total)
+## Input Features (14)
 
-| Category | Features |
-|---|---|
-| **Demographics** | Age, Gender, Height, Weight |
-| **Vitals** | Systolic BP, Diastolic BP |
-| **Lab Results** | Cholesterol Level, Glucose Level |
-| **Lifestyle** | Smoking, Alcohol Intake, Physical Activity |
-| **Engineered** | BMI (derived), Pulse Pressure (derived) |
+### Demographics
 
-### Feature Engineering
+- Age
+- Gender
+- Height
+- Weight
 
-Two features are automatically computed from raw inputs to improve model sensitivity:
+### Vital Signs
+
+- Systolic Blood Pressure
+- Diastolic Blood Pressure
+
+### Laboratory Measurements
+
+- Cholesterol
+- Glucose
+
+### Lifestyle Factors
+
+- Smoking
+- Alcohol Intake
+- Physical Activity
+
+### Engineered Features
+
+- BMI
+- Pulse Pressure
+
+---
+
+## Feature Engineering
+
+The application automatically computes two additional medical indicators before prediction.
 
 ```python
-BMI            = weight (kg) / (height (m)) ** 2
+BMI = Weight (kg) / Height² (m²)
+
 Pulse Pressure = Systolic BP - Diastolic BP
 ```
 
-### Model Pipeline
+---
+
+## Prediction Pipeline
 
 ```
-Raw Patient Input
-      │
-      ▼
-Feature Engineering (BMI, Pulse Pressure)
-      │
-      ▼
+Patient Information
+        │
+        ▼
+Data Validation
+        │
+        ▼
+Feature Engineering
+(BMI + Pulse Pressure)
+        │
+        ▼
 Gradient Boosting Classifier
-      │
-      ▼
-Risk Probability Score  →  Low Risk / High Risk
+        │
+        ▼
+Prediction Probability
+        │
+        ▼
+Low Risk / High Risk
 ```
 
 ---
 
-## 📊 Dataset
+# 📊 Dataset
 
-The model is trained on the [Cardiovascular Disease Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset) — a clinical dataset containing **70,000 patient records** with 11 features and a binary CVD target label.
+The model was trained using a publicly available cardiovascular clinical dataset containing approximately **70,000 patient records** with demographic information, vital signs, laboratory measurements, lifestyle habits, and disease labels.
 
-| Attribute | Details |
-|---|---|
-| Records | 70,000 patients |
-| Target | Presence/Absence of CVD (`0` / `1`) |
-| Balance | ~50/50 class distribution |
-| Source | Kaggle / Open Clinical Data |
+### Dataset Summary
 
----
-
-## 🚀 Usage Guide
-
-1. **Launch the app** using the live link or locally via `streamlit run app.py`
-2. **Enter patient details** — age, gender, height, weight, BP readings, and lab results
-3. **Toggle lifestyle flags** — smoking, alcohol, and physical activity status
-4. **Click "Predict"** to get instant risk classification and probability score
-5. **Interpret the result** — green for Low Risk, red for High Risk, with a confidence percentage
+| Attribute | Value |
+|------------|-------|
+| Records | 70,000 |
+| Target | Heart Disease (0 / 1) |
+| Features | Clinical & Lifestyle Variables |
+| Source | Kaggle Cardiovascular Disease Dataset |
 
 ---
 
-## 📋 Requirements
+# 🚀 How to Use
 
-```text
+1. Launch the application.
+2. Enter patient information.
+3. Provide blood pressure values.
+4. Select cholesterol and glucose levels.
+5. Specify smoking, alcohol, and physical activity status.
+6. Click **Predict**.
+7. View the predicted heart disease probability and risk classification.
+
+---
+
+# 📋 Requirements
+
+```
 streamlit
-scikit-learn
 pandas
 numpy
+scikit-learn
 joblib
 ```
 
-Install all at once:
+Install all dependencies using
 
 ```bash
 pip install -r requirements.txt
@@ -190,57 +252,98 @@ pip install -r requirements.txt
 
 ---
 
-## 🔬 Model Performance
+# 🔬 Machine Learning Model
 
-> Detailed evaluation metrics are available in `model.ipynb`.
+The prediction model was developed using **Scikit-Learn's Gradient Boosting Classifier**.
 
-The Gradient Boosting Classifier was selected after benchmarking multiple algorithms including Logistic Regression, Random Forest, and XGBoost. It was optimized via cross-validation and hyperparameter tuning for best F1-score and AUC-ROC on the held-out test set.
+The workflow includes:
 
----
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Feature Selection
+- Model Training
+- Hyperparameter Tuning
+- Cross Validation
+- Model Evaluation
+- Model Serialization using Joblib
 
-## ⚠️ Disclaimer
+The Gradient Boosting model was selected after comparing its performance against several algorithms, including:
 
-> This application is intended for **educational and research purposes only**. It is **not a substitute for professional medical advice, diagnosis, or treatment**. Always consult a qualified healthcare provider for clinical decisions.
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- K-Nearest Neighbors
+- Support Vector Machine
+- AdaBoost
+- XGBoost
 
----
+Performance evaluation was carried out using:
 
-## 👤 Author
-
-<table>
-  <tr>
-    <td align="center">
-      <strong>Rabi Shaw</strong><br/>
-      ML Engineer & Data Scientist<br/><br/>
-      <a href="https://www.linkedin.com/in/rabishaw07/">LinkedIn</a> ·
-      <a href="mailto:rshaw86309@gmail.com">Email</a> ·
-    </td>
-  </tr>
-</table>
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you'd like to improve the model, add new features, or fix issues:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- ROC-AUC
 
 ---
 
-## 📄 License
+# ⚠️ Disclaimer
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+> This project is intended solely for educational, research, and machine learning demonstration purposes. It is **not** a medical diagnostic tool and should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult qualified healthcare professionals for medical decisions.
+
+---
+
+# 👨‍💻 Author
+
+**Rabi Shaw**
+
+Machine Learning Engineer | Data Science Enthusiast
+
+- 💼 LinkedIn: https://www.linkedin.com/in/rabishaw07/
+- 📧 Email: rshaw86309@gmail.com
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+If you'd like to improve the project:
+
+1. Fork the repository.
+2. Create a feature branch.
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push the branch.
+
+```bash
+git push origin feature/new-feature
+```
+
+5. Open a Pull Request.
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
 
 ---
 
 <div align="center">
 
-Made with ❤️ by [Rabi Shaw](https://www.linkedin.com/in/rabishaw07/)
+## ⭐ If you found this project useful, consider giving it a star!
 
-⭐ If you found this project helpful, please give it a star!
+Made with ❤️ by **Rabi Shaw**
 
 </div>
