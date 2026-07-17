@@ -1,6 +1,6 @@
 # app.py
 """
-Cardio Risk Predictor - Streamlit app (robust & interactive)
+AI-Based Heart Disease Risk Prediction - Streamlit app (robust & interactive)
 Place this file next to `best_cardio_model.joblib`.
 If you want Model Performance visuals to work, also save X_test.csv and y_test.csv
 from your training script (see training notebook: save them after evaluating).
@@ -115,9 +115,9 @@ REQUIRED_FEATURES = [
 sns.set_style("darkgrid")
 plt.rcParams['font.family'] = 'Inter'
 st.set_page_config(
-    page_title="Cardio Risk Predictor", 
+    page_title="AI-Based Heart Disease Risk Prediction", 
     layout="wide", 
-    page_icon="❤️",
+    page_icon="🫀",
     initial_sidebar_state="expanded"
 )
 
@@ -190,8 +190,8 @@ try:
 except Exception as e:
     st.markdown("""
     <div class="main-header">
-        <h1 style='margin:0;'>❤️ Cardio Risk Predictor</h1>
-        <p style='margin:0; opacity:0.9;'>Advanced Cardiovascular Disease Risk Assessment</p>
+        <h1 style='margin:0;'>🫀 AI-Based Heart Disease Risk Prediction</h1>
+        <p style='margin:0; opacity:0.9;'>Machine learning-powered heart disease risk assessment</p>
     </div>
     """, unsafe_allow_html=True)
     st.error(f"🚨 Model Loading Failed: {e}")
@@ -202,7 +202,7 @@ except Exception as e:
 with st.sidebar:
     st.markdown("""
     <div style="text-align: center; padding: 1rem 0;">
-        <h2 style="color: #667eea; margin-bottom: 2rem;">❤️ Cardio Risk</h2>
+        <h2 style="color: #667eea; margin-bottom: 2rem;">🫀 AI Heart Risk</h2>
     </div>
     """, unsafe_allow_html=True)
     
@@ -222,12 +222,12 @@ with st.sidebar:
     }
     </style>
 """, unsafe_allow_html=True)
-    st.markdown("### Model Information")
+    st.markdown("### AI Model Information")
     st.markdown("""
     <div class="feature-box">
-        <small><strong>Algorithm:</strong> Gradient Boosting</small><br>
-        <small><strong>Features:</strong> 14 clinical parameters</small><br>
-        <small><strong>Last Updated:</strong> Trained on 70K records</small>
+        <small><strong>Algorithm:</strong> Gradient Boosting Classifier</small><br>
+        <small><strong>Features:</strong> 14 clinical and lifestyle parameters</small><br>
+        <small><strong>System:</strong> AI-powered heart disease risk assessment</small>
     </div>
     """, unsafe_allow_html=True)
 
@@ -236,8 +236,8 @@ if menu == "🏠 Predict":
     # Header
     st.markdown("""
     <div class="main-header">
-        <h1 style='margin:0; font-size: 2.5rem;'>❤️ Cardio Risk Predictor</h1>
-        <p style='margin:0; opacity:0.9; font-size: 1.1rem;'>Advanced Cardiovascular Disease Risk Assessment System</p>
+        <h1 style='margin:0; font-size: 2.5rem;'>🫀 AI-Based Heart Disease Risk Prediction</h1>
+        <p style='margin:0; opacity:0.9; font-size: 1.1rem;'>Machine learning-powered heart disease risk assessment system</p>
     </div>
     """, unsafe_allow_html=True)
     
@@ -326,7 +326,7 @@ if menu == "🏠 Predict":
     # Prediction Button
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        predict_btn = st.button("🚀 Predict Cardiovascular Risk", type="primary", use_container_width=True)
+        predict_btn = st.button("🚀 Predict Heart Disease Risk", type="primary", use_container_width=True)
     
     if predict_btn:
         with st.spinner("Analyzing patient data..."):
@@ -659,8 +659,8 @@ elif menu == "📁 Batch Prediction":
 elif menu == "ℹ️ About / Info":
     st.markdown("""
     <div class="main-header">
-        <h1 style='margin:0;'>ℹ️ About Cardio Risk Predictor</h1>
-        <p style='margin:0; opacity:0.9;'>Advanced Cardiovascular Disease Risk Assessment Tool</p>
+        <h1 style='margin:0;'>ℹ️ About AI-Based Heart Disease Risk Prediction</h1>
+        <p style='margin:0; opacity:0.9;'>Machine learning-powered heart disease risk assessment tool</p>
     </div>
     """, unsafe_allow_html=True)
     
@@ -669,8 +669,8 @@ elif menu == "ℹ️ About / Info":
     with col1:
         st.markdown("""
         ### 🎯 Overview
-        This application uses machine learning to predict cardiovascular disease risk 
-        based on patient demographics, clinical measurements, and lifestyle factors.
+        This AI-powered application predicts heart disease risk using patient demographics,
+        clinical measurements, and lifestyle factors.
         
         ### 🏆 Final Model Performance
         """)
@@ -697,7 +697,7 @@ elif menu == "ℹ️ About / Info":
         - **Real-time Calculations**: BMI, pulse pressure, SBP/DBP ratio
         - **Interactive Visualizations**: Dynamic charts and risk visualizations
         - **Batch Processing**: Upload and analyze multiple patient records
-        - **Feature Importance**: Understand model decision factors
+        - **Feature Importance**: Understand model decision factor
         
         ### 🔬 Model Details
         - **Algorithm**: Gradient Boosting Classifier
@@ -767,7 +767,7 @@ elif menu == "ℹ️ About / Info":
     
     ### 📝 Citation
     If you use this tool in research, please cite:
-    > Cardio Risk Predictor v1.0 - Machine learning-based cardiovascular disease risk assessment tool
+    > AI-Based Heart Disease Risk Prediction v1.0 - Machine learning-powered heart disease risk assessment tool
     
     ### 👨‍💻 Developer Contact 
     - **This Project is fully made by Yash Pratap Rai**
